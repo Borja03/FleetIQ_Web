@@ -2,69 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
+  <title>FleetIQ - Logística Inteligente</title>
+  <!-- Animate.css para animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Hoja de estilos personalizada -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Cabecera con navegación -->
   <header>
-    <h1>FleetIQ</h1>
-    <p>Optimizando la logística entre almacenes</p>
+    <nav class="navbar">
+      <div class="logo">FleetIQ</div>
+      <ul class="nav-links">
+        <li><a href="#contexto">Contexto</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#planificacion">Planificación</a></li>
+        <li><a href="#presupuesto">Presupuesto</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1 class="animate__animated animate__fadeInDown">FleetIQ</h1>
+      <p class="animate__animated animate__fadeInUp">Optimizando la logística entre almacenes</p>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#contexto">Contexto</a></li>
-      <li><a href="#objetivos">Objetivos</a></li>
-      <li><a href="#funcionalidades">Funcionalidades</a></li>
-      <li><a href="#planificacion">Planificación</a></li>
-      <li><a href="#presupuesto">Presupuesto</a></li>
-    </ul>
-  </nav>
-
+  <!-- Contenido principal -->
   <main>
-    <!-- Sección de Contexto -->
-    <section id="contexto">
+    <section id="contexto" class="card animate__animated animate__fadeIn">
       <h2>Contexto</h2>
-      <p>FleetIQ es una aplicación logística diseñada para empresas que buscan optimizar la conexión entre distintos almacenes ubicados en diversas ciudades. Su principal objetivo es gestionar eficientemente los envíos y pedidos dentro de la red de almacenes, asegurando una distribución ágil y organizada de los paquetes.</p>
-      <p>El problema que busca solucionar FleetIQ es la complejidad y falta de integración en la gestión de envíos entre almacenes. Muchas empresas enfrentan dificultades al coordinar sus inventarios y movimientos logísticos entre distintas ubicaciones, lo que genera retrasos y errores en la cadena de suministro.</p>
-      <p>FleetIQ se distingue por su interfaz intuitiva y sencilla, facilitando el trabajo de los empleados sin necesidad de conocimientos técnicos avanzados.</p>
+      <p>
+        FleetIQ es una aplicación logística diseñada para empresas que buscan optimizar la conexión entre almacenes en diversas ciudades. Gestiona envíos y pedidos de forma ágil y organizada, facilitando la distribución y reduciendo errores.
+      </p>
     </section>
 
-    <!-- Sección de Objetivos -->
-    <section id="objetivos">
+    <section id="objetivos" class="card animate__animated animate__fadeIn">
       <h2>Objetivos</h2>
-      <p>El objetivo principal de FleetIQ es optimizar los tiempos de envío y reducir costos logísticos mediante la consolidación de pedidos de distintas empresas para ser enviados juntos a una misma ciudad.</p>
+      <p>
+        El principal objetivo es optimizar los tiempos de envío y reducir costos logísticos consolidando pedidos para envíos agrupados.
+      </p>
       <h3>Funcionalidades clave:</h3>
       <ul>
-        <li>Gestión de envíos, paquetes y rutas.</li>
-        <li>Asignación de vehículos a las rutas y envíos.</li>
-        <li>Asistencia integrada para facilitar el uso de la aplicación.</li>
-        <li>Generación de informes personalizables.</li>
+        <li>Gestión de envíos y rutas.</li>
+        <li>Asignación de vehículos.</li>
+        <li>Asistencia interactiva.</li>
+        <li>Informes personalizables.</li>
       </ul>
-      <h3>Indicadores clave de éxito:</h3>
+      <h3>Indicadores de éxito:</h3>
       <ul>
-        <li>Reducción en los tiempos de procesamiento de envíos.</li>
-        <li>Disminución en el porcentaje de errores en la gestión de los envíos.</li>
+        <li>Reducción en tiempos de procesamiento.</li>
+        <li>Disminución de errores logísticos.</li>
       </ul>
     </section>
 
-    <!-- Sección de Planificación -->
-    <section id="planificacion">
+    <section id="planificacion" class="card animate__animated animate__fadeIn">
       <h2>Planificación</h2>
-      <p>El desarrollo de FleetIQ se ha estructurado en cinco fases:</p>
       <ol>
-        <li><strong>Análisis de requisitos:</strong> 2 semanas.</li>
-        <li><strong>Diseño del sistema:</strong> 3 semanas.</li>
-        <li><strong>Desarrollo e implementación:</strong> 8 semanas.</li>
-        <li><strong>Pruebas y validación:</strong> 4 semanas.</li>
-        <li><strong>Despliegue y mantenimiento:</strong> 2 semanas.</li>
+        <li><strong>Análisis de requisitos:</strong> 2 semanas</li>
+        <li><strong>Diseño del sistema:</strong> 3 semanas</li>
+        <li><strong>Desarrollo e implementación:</strong> 8 semanas</li>
+        <li><strong>Pruebas y validación:</strong> 4 semanas</li>
+        <li><strong>Despliegue y mantenimiento:</strong> 2 semanas</li>
       </ol>
     </section>
 
-    <!-- Sección de Presupuesto -->
-    <section id="presupuesto">
+    <section id="presupuesto" class="card animate__animated animate__fadeIn">
       <h2>Presupuesto</h2>
       <table>
         <thead>
@@ -100,13 +102,16 @@
           </tr>
         </tbody>
       </table>
-      <p>Este presupuesto puede variar dependiendo de las necesidades específicas durante el desarrollo y posibles ampliaciones futuras del sistema.</p>
+      <p>El presupuesto es aproximado y puede ajustarse según las necesidades específicas durante el desarrollo.</p>
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer>
-    <p>© <span id="current-year"></span> FleetIQ - Todos los derechos reservados</p>
+    <p id="footer-year">© <span id="current-year"></span> FleetIQ - Todos los derechos reservados</p>
   </footer>
+
+  <!-- JavaScript personalizado -->
   <script src="js/script.js"></script>
 </body>
 </html>

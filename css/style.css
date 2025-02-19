@@ -3,118 +3,133 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-}
-
-/* Variables de color */
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-bg: #f3f4f6;
-    --dark-bg: #111827;
-}
-
-body {
-    line-height: 1.6;
+  }
+  
+  /* Variables de colores y tipografía */
+  :root {
+    --primary-color: #2563eb;      /* Azul principal */
+    --secondary-color: #4b5563;    /* Gris oscuro para acentos */
+    --text-color: #000000;         /* Negro para textos */
+    --bg-color: #ffffff;           /* Blanco para fondo */
+    --accent-color: #f3f4f6;        /* Gris claro para elementos secundarios */
+    --font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
     color: var(--text-color);
-    background-color: var(--light-bg);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    background-color: var(--dark-bg);
-    color: white;
-    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Cabecera y navegación */
+  header {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding-bottom: 2rem;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-nav {
-    background: white;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav ul {
+    position: relative;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-nav a {
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: var(--bg-color);
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background-color: var(--light-bg);
-    color: var(--primary-color);
-}
-
-main {
-    flex: 1;
-    max-width: 1200px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+  
+  /* Contenido de la cabecera */
+  .header-content {
+    margin-top: 1.5rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Contenido principal */
+  main {
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
-}
-
-section {
-    background: white;
+  }
+  
+  .card {
+    background: var(--bg-color);
     padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-}
-
-section:hover {
+  }
+  
+  .card:hover {
     transform: translateY(-5px);
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-h2 {
+  }
+  
+  h2 {
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-p {
     margin-bottom: 1rem;
-    color: #4b5563;
-}
-
-footer {
-    background: var(--dark-bg);
-    color: white;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  /* Estilos para tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  table thead {
+    background-color: var(--accent-color);
+  }
+  
+  table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
     text-align: center;
-    padding: 1.5rem;
-    margin-top: auto;
-}
-
-/* Efectos responsivos */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    section {
-        padding: 1.5rem;
-    }
-}
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
