@@ -132,4 +132,10 @@
     padding: 1rem;
     margin-top: 2rem;
   }
-  
+  .context-image {
+    width: 450px;    /* o el tamaño que prefieras */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
