@@ -174,11 +174,12 @@ footer {
 
 /* Imágenes */
 .context-image {
-  width: 450px;
+  width: 600px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  margin-top: 40px;
 }
 
 .context-image:hover {
